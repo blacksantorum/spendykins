@@ -10,4 +10,6 @@
 
 @interface SpendykinsViewController : UIViewController
 
+@property (strong,nonatomic) NSManagedObjectContext *context;
+
 @end

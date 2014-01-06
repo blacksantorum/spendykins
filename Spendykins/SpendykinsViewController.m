@@ -7,12 +7,20 @@
 //
 
 #import "SpendykinsViewController.h"
+#import "SpendingCategory+Create.h"
 
 @interface SpendykinsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *confirmationLabel;
+@property (weak, nonatomic) IBOutlet UITextField *categoryTextField;
 @end
 
 @implementation SpendykinsViewController
+
+- (IBAction)addCategoryButton:(id)sender {
+    SpendingCategory *category = [SpendingCategory spendingCategoryWithName:self.categoryTextField.text inManagedObjectContext:self.context];
+    
+    self.confirmationLabel.text = [NSString stringWithFormat:@"%@ added!",category.name];
+}
 
 - (void)viewDidLoad
 {
