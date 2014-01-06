@@ -9,7 +9,7 @@
 #import "SpendykinsViewController.h"
 
 @interface SpendykinsViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *confirmationLabel;
 @end
 
 @implementation SpendykinsViewController
