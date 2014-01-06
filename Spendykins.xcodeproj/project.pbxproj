@@ -21,6 +21,13 @@
 		ECB14114187A9ECC008A58AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB140F6187A9ECC008A58AA /* UIKit.framework */; };
 		ECB1411C187A9ECC008A58AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECB1411A187A9ECC008A58AA /* InfoPlist.strings */; };
 		ECB1411E187A9ECC008A58AA /* SpendykinsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB1411D187A9ECC008A58AA /* SpendykinsTests.m */; };
+		ECB14129187A9FC9008A58AA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECB14127187A9FC9008A58AA /* Model.xcdatamodeld */; };
+		ECB1413F187AA59E008A58AA /* SpendingCategory+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB1413E187AA59E008A58AA /* SpendingCategory+Create.m */; };
+		ECB14142187AABDC008A58AA /* Rating+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14141187AABDC008A58AA /* Rating+Create.m */; };
+		ECB1414E187AAD25008A58AA /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB1414D187AAD25008A58AA /* Rating.m */; };
+		ECB14151187AAD26008A58AA /* SpendingCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14150187AAD26008A58AA /* SpendingCategory.m */; };
+		ECB14154187AAD26008A58AA /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14153187AAD26008A58AA /* Transaction.m */; };
+		ECB14157187AB182008A58AA /* Transaction+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14156187AB182008A58AA /* Transaction+Create.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,19 @@
 		ECB14119187A9ECC008A58AA /* SpendykinsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpendykinsTests-Info.plist"; sourceTree = "<group>"; };
 		ECB1411B187A9ECC008A58AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ECB1411D187A9ECC008A58AA /* SpendykinsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpendykinsTests.m; sourceTree = "<group>"; };
+		ECB14128187A9FC9008A58AA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		ECB1413D187AA59E008A58AA /* SpendingCategory+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpendingCategory+Create.h"; sourceTree = "<group>"; };
+		ECB1413E187AA59E008A58AA /* SpendingCategory+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SpendingCategory+Create.m"; sourceTree = "<group>"; };
+		ECB14140187AABDC008A58AA /* Rating+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rating+Create.h"; sourceTree = "<group>"; };
+		ECB14141187AABDC008A58AA /* Rating+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Rating+Create.m"; sourceTree = "<group>"; };
+		ECB1414C187AAD25008A58AA /* Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
+		ECB1414D187AAD25008A58AA /* Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
+		ECB1414F187AAD26008A58AA /* SpendingCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpendingCategory.h; sourceTree = "<group>"; };
+		ECB14150187AAD26008A58AA /* SpendingCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpendingCategory.m; sourceTree = "<group>"; };
+		ECB14152187AAD26008A58AA /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		ECB14153187AAD26008A58AA /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		ECB14155187AB182008A58AA /* Transaction+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transaction+Create.h"; sourceTree = "<group>"; };
+		ECB14156187AB182008A58AA /* Transaction+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transaction+Create.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				ECB14101187A9ECC008A58AA /* SpendykinsAppDelegate.h */,
+				ECB14127187A9FC9008A58AA /* Model.xcdatamodeld */,
+				ECB14133187AA253008A58AA /* Model */,
 				ECB14102187A9ECC008A58AA /* SpendykinsAppDelegate.m */,
 				ECB14104187A9ECC008A58AA /* Main.storyboard */,
 				ECB14107187A9ECC008A58AA /* SpendykinsViewController.h */,
@@ -150,6 +172,25 @@
 				ECB1411A187A9ECC008A58AA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECB14133187AA253008A58AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECB14152187AAD26008A58AA /* Transaction.h */,
+				ECB14153187AAD26008A58AA /* Transaction.m */,
+				ECB1414F187AAD26008A58AA /* SpendingCategory.h */,
+				ECB14150187AAD26008A58AA /* SpendingCategory.m */,
+				ECB1414C187AAD25008A58AA /* Rating.h */,
+				ECB1414D187AAD25008A58AA /* Rating.m */,
+				ECB1413D187AA59E008A58AA /* SpendingCategory+Create.h */,
+				ECB1413E187AA59E008A58AA /* SpendingCategory+Create.m */,
+				ECB14140187AABDC008A58AA /* Rating+Create.h */,
+				ECB14141187AABDC008A58AA /* Rating+Create.m */,
+				ECB14155187AB182008A58AA /* Transaction+Create.h */,
+				ECB14156187AB182008A58AA /* Transaction+Create.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +291,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB14157187AB182008A58AA /* Transaction+Create.m in Sources */,
+				ECB14154187AAD26008A58AA /* Transaction.m in Sources */,
+				ECB1413F187AA59E008A58AA /* SpendingCategory+Create.m in Sources */,
+				ECB14142187AABDC008A58AA /* Rating+Create.m in Sources */,
 				ECB14103187A9ECC008A58AA /* SpendykinsAppDelegate.m in Sources */,
+				ECB14151187AAD26008A58AA /* SpendingCategory.m in Sources */,
 				ECB14109187A9ECC008A58AA /* SpendykinsViewController.m in Sources */,
 				ECB140FF187A9ECC008A58AA /* main.m in Sources */,
+				ECB1414E187AAD25008A58AA /* Rating.m in Sources */,
+				ECB14129187A9FC9008A58AA /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +519,20 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECB14127187A9FC9008A58AA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECB14128187A9FC9008A58AA /* Model.xcdatamodel */,
+			);
+			currentVersion = ECB14128187A9FC9008A58AA /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ECB140E7187A9ECC008A58AA /* Project object */;
 }
