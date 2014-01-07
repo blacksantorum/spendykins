@@ -8,10 +8,9 @@
 
 #import "CategoryListViewController.h"
 #import "SpendingCategory.h"
+#import "ContextNavController.h"
 
 @interface CategoryListViewController ()
-
--(void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -21,6 +20,10 @@
 {
     if (!_fetchedResultsController) {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+        
+        ContextNavController *navController = (ContextNavController *)self.navigationController;
+        self.context = navController.context;
+        
         NSEntityDescription *entity = [NSEntityDescription entityForName:@"SpendingCategory" inManagedObjectContext:self.context];
         [fetchRequest setEntity:entity];
         
@@ -49,6 +52,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    // [self.context = self.navigationController.context];
+    NSError *error;
+    [self.fetchedResultsController performFetch:&error];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -76,9 +82,11 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [[[self.fetchedResultsController sections] objectAtIndex:section] count];
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    id  sectionInfo =
+    [[self.fetchedResultsController sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

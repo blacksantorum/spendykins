@@ -8,6 +8,7 @@
 
 #import "SpendykinsAppDelegate.h"
 #import "SpendykinsViewController.h"
+#import "CategoryListViewController.h"
 
 @implementation SpendykinsAppDelegate
 

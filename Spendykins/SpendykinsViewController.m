@@ -8,6 +8,7 @@
 
 #import "SpendykinsViewController.h"
 #import "SpendingCategory+Create.h"
+#import "ContextNavController.h"
 
 @interface SpendykinsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *confirmationLabel;
@@ -28,6 +29,12 @@
     } else {
         self.confirmationLabel.text = [NSString stringWithFormat:@"%@ already exists!",self.categoryTextField.text];
     }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ContextNavController *destVC = (ContextNavController *)segue.destinationViewController;
+    destVC.context = self.context;
 }
 
 - (void)viewDidLoad

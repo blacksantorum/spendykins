@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		ECA07118187BFEAC004CFA05 /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */; };
+		ECA0711B187C903A004CFA05 /* AddTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0711A187C903A004CFA05 /* AddTransactionViewController.m */; };
+		ECA0711E187C9B02004CFA05 /* AddingTransactionCLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0711D187C9B02004CFA05 /* AddingTransactionCLVC.m */; };
+		ECA07124187CA238004CFA05 /* ContextNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA07123187CA238004CFA05 /* ContextNavController.m */; };
 		ECB140F3187A9ECC008A58AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB140F2187A9ECC008A58AA /* Foundation.framework */; };
 		ECB140F5187A9ECC008A58AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB140F4187A9ECC008A58AA /* CoreGraphics.framework */; };
 		ECB140F7187A9ECC008A58AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB140F6187A9ECC008A58AA /* UIKit.framework */; };
@@ -44,6 +47,12 @@
 /* Begin PBXFileReference section */
 		ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
 		ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
+		ECA07119187C903A004CFA05 /* AddTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTransactionViewController.h; sourceTree = "<group>"; };
+		ECA0711A187C903A004CFA05 /* AddTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTransactionViewController.m; sourceTree = "<group>"; };
+		ECA0711C187C9B02004CFA05 /* AddingTransactionCLVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddingTransactionCLVC.h; sourceTree = "<group>"; };
+		ECA0711D187C9B02004CFA05 /* AddingTransactionCLVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddingTransactionCLVC.m; sourceTree = "<group>"; };
+		ECA07122187CA238004CFA05 /* ContextNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContextNavController.h; path = ../ContextNavController.h; sourceTree = "<group>"; };
+		ECA07123187CA238004CFA05 /* ContextNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContextNavController.m; path = ../ContextNavController.m; sourceTree = "<group>"; };
 		ECB140EF187A9ECC008A58AA /* Spendykins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spendykins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB140F2187A9ECC008A58AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECB140F4187A9ECC008A58AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,11 +144,17 @@
 		ECB140F8187A9ECC008A58AA /* Spendykins */ = {
 			isa = PBXGroup;
 			children = (
+				ECA07122187CA238004CFA05 /* ContextNavController.h */,
+				ECA07123187CA238004CFA05 /* ContextNavController.m */,
 				ECB14101187A9ECC008A58AA /* SpendykinsAppDelegate.h */,
 				ECB14127187A9FC9008A58AA /* Model.xcdatamodeld */,
 				ECB14133187AA253008A58AA /* Model */,
 				ECB14102187A9ECC008A58AA /* SpendykinsAppDelegate.m */,
 				ECB14104187A9ECC008A58AA /* Main.storyboard */,
+				ECA0711C187C9B02004CFA05 /* AddingTransactionCLVC.h */,
+				ECA0711D187C9B02004CFA05 /* AddingTransactionCLVC.m */,
+				ECA07119187C903A004CFA05 /* AddTransactionViewController.h */,
+				ECA0711A187C903A004CFA05 /* AddTransactionViewController.m */,
 				ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */,
 				ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */,
 				ECB14107187A9ECC008A58AA /* SpendykinsViewController.h */,
@@ -297,12 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB14157187AB182008A58AA /* Transaction+Create.m in Sources */,
+				ECA07124187CA238004CFA05 /* ContextNavController.m in Sources */,
 				ECB14154187AAD26008A58AA /* Transaction.m in Sources */,
 				ECB1413F187AA59E008A58AA /* SpendingCategory+Create.m in Sources */,
 				ECB14142187AABDC008A58AA /* Rating+Create.m in Sources */,
+				ECA0711E187C9B02004CFA05 /* AddingTransactionCLVC.m in Sources */,
 				ECB14103187A9ECC008A58AA /* SpendykinsAppDelegate.m in Sources */,
 				ECB14151187AAD26008A58AA /* SpendingCategory.m in Sources */,
 				ECB14109187A9ECC008A58AA /* SpendykinsViewController.m in Sources */,
+				ECA0711B187C903A004CFA05 /* AddTransactionViewController.m in Sources */,
 				ECB140FF187A9ECC008A58AA /* main.m in Sources */,
 				ECA07118187BFEAC004CFA05 /* CategoryListViewController.m in Sources */,
 				ECB1414E187AAD25008A58AA /* Rating.m in Sources */,
