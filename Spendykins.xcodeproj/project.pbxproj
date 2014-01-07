@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA07118187BFEAC004CFA05 /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */; };
 		ECB140F3187A9ECC008A58AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB140F2187A9ECC008A58AA /* Foundation.framework */; };
 		ECB140F5187A9ECC008A58AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB140F4187A9ECC008A58AA /* CoreGraphics.framework */; };
 		ECB140F7187A9ECC008A58AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB140F6187A9ECC008A58AA /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
+		ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
 		ECB140EF187A9ECC008A58AA /* Spendykins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spendykins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB140F2187A9ECC008A58AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECB140F4187A9ECC008A58AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,8 @@
 				ECB14133187AA253008A58AA /* Model */,
 				ECB14102187A9ECC008A58AA /* SpendykinsAppDelegate.m */,
 				ECB14104187A9ECC008A58AA /* Main.storyboard */,
+				ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */,
+				ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */,
 				ECB14107187A9ECC008A58AA /* SpendykinsViewController.h */,
 				ECB14108187A9ECC008A58AA /* SpendykinsViewController.m */,
 				ECB1410A187A9ECC008A58AA /* Images.xcassets */,
@@ -299,6 +304,7 @@
 				ECB14151187AAD26008A58AA /* SpendingCategory.m in Sources */,
 				ECB14109187A9ECC008A58AA /* SpendykinsViewController.m in Sources */,
 				ECB140FF187A9ECC008A58AA /* main.m in Sources */,
+				ECA07118187BFEAC004CFA05 /* CategoryListViewController.m in Sources */,
 				ECB1414E187AAD25008A58AA /* Rating.m in Sources */,
 				ECB14129187A9FC9008A58AA /* Model.xcdatamodeld in Sources */,
 			);
@@ -509,6 +515,7 @@
 				ECB14123187A9ECC008A58AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECB14124187A9ECC008A58AA /* Build configuration list for PBXNativeTarget "SpendykinsTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +524,7 @@
 				ECB14126187A9ECC008A58AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

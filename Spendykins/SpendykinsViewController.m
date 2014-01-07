@@ -17,9 +17,17 @@
 @implementation SpendykinsViewController
 
 - (IBAction)addCategoryButton:(id)sender {
-    SpendingCategory *category = [SpendingCategory spendingCategoryWithName:self.categoryTextField.text inManagedObjectContext:self.context];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SpendingCategory"];
+    request.predicate = [NSPredicate predicateWithFormat:@"name = %@", self.categoryTextField.text];
     
-    self.confirmationLabel.text = [NSString stringWithFormat:@"%@ added!",category.name];
+    NSError *error;
+    NSArray *matches = [self.context executeFetchRequest:request error:&error];
+    if (![matches count]) {
+        SpendingCategory *category = [SpendingCategory spendingCategoryWithName:self.categoryTextField.text inManagedObjectContext:self.context];
+        self.confirmationLabel.text = [NSString stringWithFormat:@"%@ added!",category.name];
+    } else {
+        self.confirmationLabel.text = [NSString stringWithFormat:@"%@ already exists!",self.categoryTextField.text];
+    }
 }
 
 - (void)viewDidLoad

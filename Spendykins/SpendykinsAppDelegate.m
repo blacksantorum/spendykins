@@ -7,15 +7,42 @@
 //
 
 #import "SpendykinsAppDelegate.h"
+#import "SpendykinsViewController.h"
 
 @implementation SpendykinsAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSURL *documentsDirectory = [[fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
     
+    NSString *documentName = @"SpendykinsDocument";
+    NSURL *url = [documentsDirectory URLByAppendingPathComponent:documentName];
     
+    self.document = [[UIManagedDocument alloc] initWithFileURL:url];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[url path]]) {
+        [self.document openWithCompletionHandler:^(BOOL success) {
+            if (success) [self documentIsReady];
+            if (!success) NSLog(@"couldn't open document at %@",url);
+        }];
+    } else {
+        [self.document saveToURL:url forSaveOperation:UIDocumentSaveForCreating completionHandler:^(BOOL success) {
+            if (success) [self documentIsReady];
+            if (!success) NSLog(@"couldn't open document at %@",url);
+        }];
+    }
     return YES;
+}
+
+- (void)documentIsReady
+{
+    if (self.document.documentState == UIDocumentStateNormal) {
+        NSManagedObjectContext *context = self.document.managedObjectContext;
+        SpendykinsViewController *controller = (SpendykinsViewController *)self.window.rootViewController;
+        controller.context = context;
+    }
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
