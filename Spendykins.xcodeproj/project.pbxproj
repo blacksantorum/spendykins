@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC548512187F441D00EA69E5 /* AddCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC548511187F441D00EA69E5 /* AddCategoryViewController.m */; };
 		ECA07118187BFEAC004CFA05 /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */; };
 		ECA0711B187C903A004CFA05 /* AddTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0711A187C903A004CFA05 /* AddTransactionViewController.m */; };
 		ECA0711E187C9B02004CFA05 /* AddingTransactionCLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0711D187C9B02004CFA05 /* AddingTransactionCLVC.m */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC548510187F441D00EA69E5 /* AddCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCategoryViewController.h; sourceTree = "<group>"; };
+		EC548511187F441D00EA69E5 /* AddCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCategoryViewController.m; sourceTree = "<group>"; };
 		ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
 		ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
 		ECA07119187C903A004CFA05 /* AddTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTransactionViewController.h; sourceTree = "<group>"; };
@@ -111,6 +114,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC548513187F442200EA69E5 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				EC548510187F441D00EA69E5 /* AddCategoryViewController.h */,
+				EC548511187F441D00EA69E5 /* AddCategoryViewController.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
 		ECB140E6187A9ECC008A58AA = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +171,7 @@
 				ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */,
 				ECB14107187A9ECC008A58AA /* SpendykinsViewController.h */,
 				ECB14108187A9ECC008A58AA /* SpendykinsViewController.m */,
+				EC548513187F442200EA69E5 /* Abstract */,
 				ECB1410A187A9ECC008A58AA /* Images.xcassets */,
 				ECB140F9187A9ECC008A58AA /* Supporting Files */,
 			);
@@ -319,6 +332,7 @@
 				ECA0711E187C9B02004CFA05 /* AddingTransactionCLVC.m in Sources */,
 				ECB14103187A9ECC008A58AA /* SpendykinsAppDelegate.m in Sources */,
 				ECB14151187AAD26008A58AA /* SpendingCategory.m in Sources */,
+				EC548512187F441D00EA69E5 /* AddCategoryViewController.m in Sources */,
 				ECB14109187A9ECC008A58AA /* SpendykinsViewController.m in Sources */,
 				ECA0711B187C903A004CFA05 /* AddTransactionViewController.m in Sources */,
 				ECB140FF187A9ECC008A58AA /* main.m in Sources */,

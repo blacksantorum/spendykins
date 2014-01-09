@@ -17,36 +17,23 @@
 
 @implementation SpendykinsViewController
 
-- (IBAction)addCategoryButton:(id)sender {
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SpendingCategory"];
-    request.predicate = [NSPredicate predicateWithFormat:@"name = %@", self.categoryTextField.text];
-    
-    NSError *error;
-    NSArray *matches = [self.context executeFetchRequest:request error:&error];
-    if (![matches count]) {
-        SpendingCategory *category = [SpendingCategory spendingCategoryWithName:self.categoryTextField.text inManagedObjectContext:self.context];
-        self.confirmationLabel.text = [NSString stringWithFormat:@"%@ added!",category.name];
+-(void)confirm:(BOOL)wasAdded
+{
+    if (wasAdded) {
+        self.confirmationLabel.text = [NSString stringWithFormat:@"%@ added!",self.categoryTextField.text];
     } else {
         self.confirmationLabel.text = [NSString stringWithFormat:@"%@ already exists!",self.categoryTextField.text];
     }
+}
+
+- (IBAction)addCategoryButton:(id)sender {
+    [self addTransaction:self.categoryTextField.text];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     ContextNavController *destVC = (ContextNavController *)segue.destinationViewController;
     destVC.context = self.context;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
