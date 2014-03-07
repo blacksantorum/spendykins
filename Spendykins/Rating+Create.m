@@ -18,20 +18,9 @@
     Rating *createdRating = [NSEntityDescription insertNewObjectForEntityForName:@"Rating"
                                                    inManagedObjectContext:context];
     createdRating.rating = rating;
-    createdRating.date = [NSDate date];
     createdRating.transaction = transaction;
     
     return createdRating;
 }
 
-+ (Rating *)ratingWithRating:(NSNumber *)rating
-      inManagedObjectContext:(NSManagedObjectContext *)context
-{
-    Rating *createdRating = [NSEntityDescription insertNewObjectForEntityForName:@"Rating"
-                                                          inManagedObjectContext:context];
-    createdRating.rating = rating;
-    createdRating.date = [NSDate date];
-    
-    return createdRating;
-}
 @end

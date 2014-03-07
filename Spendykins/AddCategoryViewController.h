@@ -12,6 +12,6 @@
 
 @property (strong,nonatomic) NSManagedObjectContext *context;
 
--(void)addTransaction:(NSString *)categoryName;
+-(void)addCategory:(NSString *)categoryName;
 
 @end

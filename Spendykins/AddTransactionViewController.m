@@ -7,45 +7,55 @@
 //
 
 #import "AddTransactionViewController.h"
+#import "FakeTransaction.h"
+#import "RateAndConfirmVC.h"
+#import "Transaction+Create.h"
 
 @interface AddTransactionViewController ()
 // transaction property setters
 @property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
 @property (weak, nonatomic) IBOutlet UITextField *amountTextField;
-@property (weak, nonatomic) IBOutlet UISlider *ratingSlider;
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
 // outlets
-@property (weak, nonatomic) IBOutlet UILabel *descriptionTextLabel;
 @property (weak, nonatomic) IBOutlet UILabel *confirmationTextLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *smileyFaceImage;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 
 
 @end
 
 @implementation AddTransactionViewController
 
-- (IBAction)addTransactionButton:(id)sender {
+- (IBAction)datePickerTapped:(id)sender {
+    self.nextButton.enabled = YES;
+    [self.view endEditing:YES];
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if ([segue.identifier isEqualToString:@"rateAndConfirm"]) {
+        RateAndConfirmVC *vc = (RateAndConfirmVC *)segue.destinationViewController;
+        vc.category = self.category;
+        FakeTransaction *transaction = [[FakeTransaction alloc] init];
+        transaction.transactionDescription = self.descriptionTextField.text;
+        transaction.amount = (NSDecimalNumber *)self.amountTextField.text;
+        transaction.date = self.datePicker.date;
+        
+        vc.transaction = transaction;
     }
-    return self;
 }
+
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.nextButton.enabled = NO;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)addTransaction:(FakeTransaction *)transaction
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   /* Transaction *transactionToAdd = [Transaction transactionWithDescription:transaction.transactionDescription amount:transaction.amount spendingCategory:transaction.category date:transaction.date rating: inManagedObjectContext:self.context]; */
 }
+
+
 
 @end

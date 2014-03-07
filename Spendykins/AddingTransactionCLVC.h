@@ -8,6 +8,6 @@
 
 #import "CategoryListViewController.h"
 
-@interface AddingTransactionCLVC : CategoryListViewController
+@interface AddingTransactionCLVC : CategoryListViewController <UIAlertViewDelegate>
 
 @end

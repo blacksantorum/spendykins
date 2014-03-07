@@ -14,7 +14,5 @@
                  transaction:(Transaction *)transaction
                         inManagedObjectContext:(NSManagedObjectContext *)context;
 
-+ (Rating *)ratingWithRating:(NSNumber *)rating
-      inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end

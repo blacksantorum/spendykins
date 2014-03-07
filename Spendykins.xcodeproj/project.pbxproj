@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC40A6F618C7E51C002911C3 /* SpendingCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EC40A6F518C7E51C002911C3 /* SpendingCategory.m */; };
+		EC40A6FF18C7E5CE002911C3 /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = EC40A6FE18C7E5CE002911C3 /* Rating.m */; };
+		EC40A70518C7F791002911C3 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = EC40A70418C7F791002911C3 /* Transaction.m */; };
+		EC40A70818CA896F002911C3 /* NavPathAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC40A70718CA896F002911C3 /* NavPathAlertView.m */; };
 		EC548512187F441D00EA69E5 /* AddCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC548511187F441D00EA69E5 /* AddCategoryViewController.m */; };
+		EC54851C187F508A00EA69E5 /* AddCategoryFromNavBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54851A187F508A00EA69E5 /* AddCategoryFromNavBarVC.m */; };
+		EC54851D187F508A00EA69E5 /* AddCategoryFromNavBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC54851B187F508A00EA69E5 /* AddCategoryFromNavBarVC.xib */; };
+		EC548521187F51D300EA69E5 /* StringsGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = EC548520187F51D300EA69E5 /* StringsGenerator.m */; };
+		EC548527187F796500EA69E5 /* RateAndConfirmVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC548525187F796500EA69E5 /* RateAndConfirmVC.m */; };
+		EC548528187F796500EA69E5 /* RateAndConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC548526187F796500EA69E5 /* RateAndConfirmVC.xib */; };
+		EC54852B187F80D200EA69E5 /* FakeTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54852A187F80D200EA69E5 /* FakeTransaction.m */; };
 		ECA07118187BFEAC004CFA05 /* CategoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */; };
 		ECA0711B187C903A004CFA05 /* AddTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0711A187C903A004CFA05 /* AddTransactionViewController.m */; };
 		ECA0711E187C9B02004CFA05 /* AddingTransactionCLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0711D187C9B02004CFA05 /* AddingTransactionCLVC.m */; };
@@ -29,9 +39,6 @@
 		ECB14129187A9FC9008A58AA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECB14127187A9FC9008A58AA /* Model.xcdatamodeld */; };
 		ECB1413F187AA59E008A58AA /* SpendingCategory+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB1413E187AA59E008A58AA /* SpendingCategory+Create.m */; };
 		ECB14142187AABDC008A58AA /* Rating+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14141187AABDC008A58AA /* Rating+Create.m */; };
-		ECB1414E187AAD25008A58AA /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB1414D187AAD25008A58AA /* Rating.m */; };
-		ECB14151187AAD26008A58AA /* SpendingCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14150187AAD26008A58AA /* SpendingCategory.m */; };
-		ECB14154187AAD26008A58AA /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14153187AAD26008A58AA /* Transaction.m */; };
 		ECB14157187AB182008A58AA /* Transaction+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14156187AB182008A58AA /* Transaction+Create.m */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +53,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC40A6F418C7E51C002911C3 /* SpendingCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpendingCategory.h; sourceTree = "<group>"; };
+		EC40A6F518C7E51C002911C3 /* SpendingCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpendingCategory.m; sourceTree = "<group>"; };
+		EC40A6FD18C7E5CE002911C3 /* Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
+		EC40A6FE18C7E5CE002911C3 /* Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
+		EC40A70318C7F791002911C3 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		EC40A70418C7F791002911C3 /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		EC40A70618CA896F002911C3 /* NavPathAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavPathAlertView.h; sourceTree = "<group>"; };
+		EC40A70718CA896F002911C3 /* NavPathAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavPathAlertView.m; sourceTree = "<group>"; };
 		EC548510187F441D00EA69E5 /* AddCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCategoryViewController.h; sourceTree = "<group>"; };
 		EC548511187F441D00EA69E5 /* AddCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCategoryViewController.m; sourceTree = "<group>"; };
+		EC548519187F508A00EA69E5 /* AddCategoryFromNavBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddCategoryFromNavBarVC.h; path = ../AddCategoryFromNavBarVC.h; sourceTree = "<group>"; };
+		EC54851A187F508A00EA69E5 /* AddCategoryFromNavBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddCategoryFromNavBarVC.m; path = ../AddCategoryFromNavBarVC.m; sourceTree = "<group>"; };
+		EC54851B187F508A00EA69E5 /* AddCategoryFromNavBarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddCategoryFromNavBarVC.xib; path = ../AddCategoryFromNavBarVC.xib; sourceTree = "<group>"; };
+		EC54851F187F51D300EA69E5 /* StringsGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringsGenerator.h; sourceTree = "<group>"; };
+		EC548520187F51D300EA69E5 /* StringsGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringsGenerator.m; sourceTree = "<group>"; };
+		EC548524187F796500EA69E5 /* RateAndConfirmVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RateAndConfirmVC.h; sourceTree = "<group>"; };
+		EC548525187F796500EA69E5 /* RateAndConfirmVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RateAndConfirmVC.m; sourceTree = "<group>"; };
+		EC548526187F796500EA69E5 /* RateAndConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RateAndConfirmVC.xib; sourceTree = "<group>"; };
+		EC548529187F80D200EA69E5 /* FakeTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeTransaction.h; sourceTree = "<group>"; };
+		EC54852A187F80D200EA69E5 /* FakeTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeTransaction.m; sourceTree = "<group>"; };
 		ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryListViewController.h; sourceTree = "<group>"; };
 		ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryListViewController.m; sourceTree = "<group>"; };
 		ECA07119187C903A004CFA05 /* AddTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTransactionViewController.h; sourceTree = "<group>"; };
@@ -80,12 +105,6 @@
 		ECB1413E187AA59E008A58AA /* SpendingCategory+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SpendingCategory+Create.m"; sourceTree = "<group>"; };
 		ECB14140187AABDC008A58AA /* Rating+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rating+Create.h"; sourceTree = "<group>"; };
 		ECB14141187AABDC008A58AA /* Rating+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Rating+Create.m"; sourceTree = "<group>"; };
-		ECB1414C187AAD25008A58AA /* Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
-		ECB1414D187AAD25008A58AA /* Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
-		ECB1414F187AAD26008A58AA /* SpendingCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpendingCategory.h; sourceTree = "<group>"; };
-		ECB14150187AAD26008A58AA /* SpendingCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpendingCategory.m; sourceTree = "<group>"; };
-		ECB14152187AAD26008A58AA /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
-		ECB14153187AAD26008A58AA /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
 		ECB14155187AB182008A58AA /* Transaction+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transaction+Create.h"; sourceTree = "<group>"; };
 		ECB14156187AB182008A58AA /* Transaction+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transaction+Create.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,10 +136,45 @@
 		EC548513187F442200EA69E5 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
-				EC548510187F441D00EA69E5 /* AddCategoryViewController.h */,
-				EC548511187F441D00EA69E5 /* AddCategoryViewController.m */,
+				ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */,
+				ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */,
 			);
 			name = Abstract;
+			sourceTree = "<group>";
+		};
+		EC54851E187F50CA00EA69E5 /* Adding Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EC548519187F508A00EA69E5 /* AddCategoryFromNavBarVC.h */,
+				EC54851A187F508A00EA69E5 /* AddCategoryFromNavBarVC.m */,
+				EC54851B187F508A00EA69E5 /* AddCategoryFromNavBarVC.xib */,
+				EC548510187F441D00EA69E5 /* AddCategoryViewController.h */,
+				EC548511187F441D00EA69E5 /* AddCategoryViewController.m */,
+				ECB14107187A9ECC008A58AA /* SpendykinsViewController.h */,
+				ECB14108187A9ECC008A58AA /* SpendykinsViewController.m */,
+			);
+			name = "Adding Categories";
+			sourceTree = "<group>";
+		};
+		EC548522187F51EF00EA69E5 /* Utility Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC54851F187F51D300EA69E5 /* StringsGenerator.h */,
+				EC548520187F51D300EA69E5 /* StringsGenerator.m */,
+			);
+			name = "Utility Classes";
+			sourceTree = "<group>";
+		};
+		EC548523187F77A700EA69E5 /* Adding Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				ECA07119187C903A004CFA05 /* AddTransactionViewController.h */,
+				ECA0711A187C903A004CFA05 /* AddTransactionViewController.m */,
+				EC548524187F796500EA69E5 /* RateAndConfirmVC.h */,
+				EC548525187F796500EA69E5 /* RateAndConfirmVC.m */,
+				EC548526187F796500EA69E5 /* RateAndConfirmVC.xib */,
+			);
+			name = "Adding Transactions";
 			sourceTree = "<group>";
 		};
 		ECB140E6187A9ECC008A58AA = {
@@ -156,7 +210,11 @@
 		ECB140F8187A9ECC008A58AA /* Spendykins */ = {
 			isa = PBXGroup;
 			children = (
+				EC40A70618CA896F002911C3 /* NavPathAlertView.h */,
+				EC40A70718CA896F002911C3 /* NavPathAlertView.m */,
+				EC548522187F51EF00EA69E5 /* Utility Classes */,
 				ECA07122187CA238004CFA05 /* ContextNavController.h */,
+				EC54851E187F50CA00EA69E5 /* Adding Categories */,
 				ECA07123187CA238004CFA05 /* ContextNavController.m */,
 				ECB14101187A9ECC008A58AA /* SpendykinsAppDelegate.h */,
 				ECB14127187A9FC9008A58AA /* Model.xcdatamodeld */,
@@ -165,12 +223,7 @@
 				ECB14104187A9ECC008A58AA /* Main.storyboard */,
 				ECA0711C187C9B02004CFA05 /* AddingTransactionCLVC.h */,
 				ECA0711D187C9B02004CFA05 /* AddingTransactionCLVC.m */,
-				ECA07119187C903A004CFA05 /* AddTransactionViewController.h */,
-				ECA0711A187C903A004CFA05 /* AddTransactionViewController.m */,
-				ECA07116187BFEAC004CFA05 /* CategoryListViewController.h */,
-				ECA07117187BFEAC004CFA05 /* CategoryListViewController.m */,
-				ECB14107187A9ECC008A58AA /* SpendykinsViewController.h */,
-				ECB14108187A9ECC008A58AA /* SpendykinsViewController.m */,
+				EC548523187F77A700EA69E5 /* Adding Transactions */,
 				EC548513187F442200EA69E5 /* Abstract */,
 				ECB1410A187A9ECC008A58AA /* Images.xcassets */,
 				ECB140F9187A9ECC008A58AA /* Supporting Files */,
@@ -210,12 +263,14 @@
 		ECB14133187AA253008A58AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ECB14152187AAD26008A58AA /* Transaction.h */,
-				ECB14153187AAD26008A58AA /* Transaction.m */,
-				ECB1414F187AAD26008A58AA /* SpendingCategory.h */,
-				ECB14150187AAD26008A58AA /* SpendingCategory.m */,
-				ECB1414C187AAD25008A58AA /* Rating.h */,
-				ECB1414D187AAD25008A58AA /* Rating.m */,
+				EC40A70318C7F791002911C3 /* Transaction.h */,
+				EC40A70418C7F791002911C3 /* Transaction.m */,
+				EC40A6FD18C7E5CE002911C3 /* Rating.h */,
+				EC40A6FE18C7E5CE002911C3 /* Rating.m */,
+				EC40A6F418C7E51C002911C3 /* SpendingCategory.h */,
+				EC40A6F518C7E51C002911C3 /* SpendingCategory.m */,
+				EC548529187F80D200EA69E5 /* FakeTransaction.h */,
+				EC54852A187F80D200EA69E5 /* FakeTransaction.m */,
 				ECB1413D187AA59E008A58AA /* SpendingCategory+Create.h */,
 				ECB1413E187AA59E008A58AA /* SpendingCategory+Create.m */,
 				ECB14140187AABDC008A58AA /* Rating+Create.h */,
@@ -303,8 +358,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC548528187F796500EA69E5 /* RateAndConfirmVC.xib in Resources */,
 				ECB1410B187A9ECC008A58AA /* Images.xcassets in Resources */,
 				ECB140FD187A9ECC008A58AA /* InfoPlist.strings in Resources */,
+				EC54851D187F508A00EA69E5 /* AddCategoryFromNavBarVC.xib in Resources */,
 				ECB14106187A9ECC008A58AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,20 +381,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC40A6F618C7E51C002911C3 /* SpendingCategory.m in Sources */,
+				EC548521187F51D300EA69E5 /* StringsGenerator.m in Sources */,
 				ECB14157187AB182008A58AA /* Transaction+Create.m in Sources */,
 				ECA07124187CA238004CFA05 /* ContextNavController.m in Sources */,
-				ECB14154187AAD26008A58AA /* Transaction.m in Sources */,
+				EC54851C187F508A00EA69E5 /* AddCategoryFromNavBarVC.m in Sources */,
+				EC40A70518C7F791002911C3 /* Transaction.m in Sources */,
 				ECB1413F187AA59E008A58AA /* SpendingCategory+Create.m in Sources */,
+				EC40A6FF18C7E5CE002911C3 /* Rating.m in Sources */,
+				EC54852B187F80D200EA69E5 /* FakeTransaction.m in Sources */,
 				ECB14142187AABDC008A58AA /* Rating+Create.m in Sources */,
+				EC40A70818CA896F002911C3 /* NavPathAlertView.m in Sources */,
 				ECA0711E187C9B02004CFA05 /* AddingTransactionCLVC.m in Sources */,
 				ECB14103187A9ECC008A58AA /* SpendykinsAppDelegate.m in Sources */,
-				ECB14151187AAD26008A58AA /* SpendingCategory.m in Sources */,
 				EC548512187F441D00EA69E5 /* AddCategoryViewController.m in Sources */,
 				ECB14109187A9ECC008A58AA /* SpendykinsViewController.m in Sources */,
 				ECA0711B187C903A004CFA05 /* AddTransactionViewController.m in Sources */,
 				ECB140FF187A9ECC008A58AA /* main.m in Sources */,
 				ECA07118187BFEAC004CFA05 /* CategoryListViewController.m in Sources */,
-				ECB1414E187AAD25008A58AA /* Rating.m in Sources */,
+				EC548527187F796500EA69E5 /* RateAndConfirmVC.m in Sources */,
 				ECB14129187A9FC9008A58AA /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

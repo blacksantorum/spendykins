@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Rating" representedClassName="Rating" syncable="YES">
-        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="transaction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="ratings" inverseEntity="Transaction" syncable="YES"/>
+        <relationship name="transaction" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="rating" inverseEntity="Transaction" syncable="YES"/>
     </entity>
     <entity name="SpendingCategory" representedClassName="SpendingCategory" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -12,13 +11,14 @@
     <entity name="Transaction" representedClassName="Transaction" syncable="YES">
         <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="published" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="transactionDescription" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SpendingCategory" inverseName="transactions" inverseEntity="SpendingCategory" syncable="YES"/>
-        <relationship name="ratings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rating" inverseName="transaction" inverseEntity="Rating" syncable="YES"/>
+        <relationship name="rating" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Rating" inverseName="transaction" inverseEntity="Rating" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Rating" positionX="0" positionY="0" width="0" height="0"/>
         <element name="SpendingCategory" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Transaction" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Rating" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

@@ -25,9 +25,9 @@
     transaction.amount = amount;
     transaction.category = spendingCategory;
     
-    Rating *createdRating = [Rating ratingWithRating:rating inManagedObjectContext:context];
+    Rating *createdRating = [Rating ratingWithRating:rating transaction:transaction inManagedObjectContext:context];
     
-    [transaction addRatingsObject:createdRating];
+    transaction.rating = createdRating;
     
     return transaction;
 }

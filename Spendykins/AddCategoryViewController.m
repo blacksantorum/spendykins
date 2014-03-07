@@ -16,7 +16,7 @@
 
 @implementation AddCategoryViewController
 
--(void)addTransaction:(NSString *)categoryName
+-(void)addCategory:(NSString *)categoryName
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"SpendingCategory"];
     request.predicate = [NSPredicate predicateWithFormat:@"name = %@", categoryName];

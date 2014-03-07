@@ -9,6 +9,7 @@
 #import "AddingTransactionCLVC.h"
 #import "AddTransactionViewController.h"
 #import "SpendingCategory.h"
+#import "AddCategoryFromNavBarVC.h"
 
 @interface AddingTransactionCLVC ()
 
@@ -31,4 +32,30 @@
     }
 }
 
+- (IBAction)addCategoryButton:(id)sender {
+    AddCategoryFromNavBarVC *addVC = [[AddCategoryFromNavBarVC alloc] initWithNibName:@"AddCategoryFromNavBarVC" bundle:nil];
+    addVC.context = self.context;
+    [self presentViewController:addVC animated:YES completion:nil];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    switch (buttonIndex) {
+        case 0:
+            NSLog(@"button 0 pressed");
+            break;
+            
+        case 1:
+            NSLog(@"button 1 pressed");
+            break;
+        
+        case 2:
+            NSLog(@"button 2 pressed");
+            break;
+            
+        default:
+            [alertView removeFromSuperview];
+            break;
+    }
+}
 @end

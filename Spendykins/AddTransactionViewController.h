@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SpendingCategory.h"
+#import "RateAndConfirmVC.h"
 
 @interface AddTransactionViewController : UIViewController
 

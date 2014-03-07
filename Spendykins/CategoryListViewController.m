@@ -9,6 +9,7 @@
 #import "CategoryListViewController.h"
 #import "SpendingCategory.h"
 #import "ContextNavController.h"
+#import "SpendykinsAppDelegate.h"
 
 @interface CategoryListViewController ()
 
@@ -16,7 +17,16 @@
 
 @implementation CategoryListViewController
 
--(NSFetchedResultsController *)fetchedResultsController
+- (NSManagedObjectContext *)context
+{
+    if (!_context) {
+        SpendykinsAppDelegate *delegate = (SpendykinsAppDelegate *)[[UIApplication sharedApplication] delegate];
+        _context = delegate.context;
+    }
+    return _context;
+}
+
+- (NSFetchedResultsController *)fetchedResultsController
 {
     if (!_fetchedResultsController) {
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
@@ -52,7 +62,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // [self.context = self.navigationController.context];
     NSError *error;
     [self.fetchedResultsController performFetch:&error];
 
