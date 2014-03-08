@@ -107,9 +107,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Vun-Ii-pvz" kind="push" identifier="addTransaction" id="ZJy-7Y-dSu"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -132,7 +129,7 @@
         <!--Add Transaction View Controller-->
         <scene sceneID="yFJ-l9-L5w">
             <objects>
-                <viewController id="Vun-Ii-pvz" customClass="AddTransactionViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="startAdd" id="Vun-Ii-pvz" customClass="AddTransactionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ql8-Mc-7ZH"/>
                         <viewControllerLayoutGuide type="bottom" id="oup-mF-NuO"/>

@@ -48,6 +48,7 @@
 
 - (void)viewDidLoad
 {
+    self.title = self.category.name;
     self.nextButton.enabled = NO;
 }
 

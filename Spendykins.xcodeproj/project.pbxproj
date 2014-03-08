@@ -40,6 +40,7 @@
 		ECB1413F187AA59E008A58AA /* SpendingCategory+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB1413E187AA59E008A58AA /* SpendingCategory+Create.m */; };
 		ECB14142187AABDC008A58AA /* Rating+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14141187AABDC008A58AA /* Rating+Create.m */; };
 		ECB14157187AB182008A58AA /* Transaction+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB14156187AB182008A58AA /* Transaction+Create.m */; };
+		ECB16EB018CA964A002821AB /* TransactionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB16EAF18CA964A002821AB /* TransactionsListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		ECB14141187AABDC008A58AA /* Rating+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Rating+Create.m"; sourceTree = "<group>"; };
 		ECB14155187AB182008A58AA /* Transaction+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Transaction+Create.h"; sourceTree = "<group>"; };
 		ECB14156187AB182008A58AA /* Transaction+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Transaction+Create.m"; sourceTree = "<group>"; };
+		ECB16EAE18CA964A002821AB /* TransactionsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionsListViewController.h; sourceTree = "<group>"; };
+		ECB16EAF18CA964A002821AB /* TransactionsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionsListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,8 @@
 		ECB140F8187A9ECC008A58AA /* Spendykins */ = {
 			isa = PBXGroup;
 			children = (
+				ECB16EAE18CA964A002821AB /* TransactionsListViewController.h */,
+				ECB16EAF18CA964A002821AB /* TransactionsListViewController.m */,
 				EC40A70618CA896F002911C3 /* NavPathAlertView.h */,
 				EC40A70718CA896F002911C3 /* NavPathAlertView.m */,
 				EC548522187F51EF00EA69E5 /* Utility Classes */,
@@ -384,6 +389,7 @@
 				EC40A6F618C7E51C002911C3 /* SpendingCategory.m in Sources */,
 				EC548521187F51D300EA69E5 /* StringsGenerator.m in Sources */,
 				ECB14157187AB182008A58AA /* Transaction+Create.m in Sources */,
+				ECB16EB018CA964A002821AB /* TransactionsListViewController.m in Sources */,
 				ECA07124187CA238004CFA05 /* ContextNavController.m in Sources */,
 				EC54851C187F508A00EA69E5 /* AddCategoryFromNavBarVC.m in Sources */,
 				EC40A70518C7F791002911C3 /* Transaction.m in Sources */,

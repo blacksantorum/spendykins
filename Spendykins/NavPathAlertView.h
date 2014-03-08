@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SpendingCategory.h"
 
 @interface NavPathAlertView : UIAlertView
+
+@property (nonatomic,strong) SpendingCategory *category;
 
 @end
